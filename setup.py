@@ -42,6 +42,7 @@ setup(
     'autofaiss',
     'einops>=0.3',
     "fairscale>0.3",
+    'faiss',
     'huggingface-hub',
     'numpy',
     "nltk",
