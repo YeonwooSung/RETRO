@@ -19,16 +19,24 @@ Simple check for pyretro repo: https://github.com/YeonwooSung/RETRO
 """
 
 from setuptools import setup, find_packages
+import os.path as path
+
+basedir = path.abspath(path.dirname(__file__))
+with open(path.join(basedir, 'README.md'), encoding='utf-8') as f:
+    long_description = f.read()
+
 
 setup(
   name = 'pyretro',
   packages = find_packages(exclude=[]),
-  version = '0.0.1',
+  version = '0.0.2',
   license='GNU',
   description = 'RETRO :: Retrieval Enhanced Transformer',
   author = 'Yeonwoo Sung',
   author_email = 'neos960518@gmail.com',
   url = 'https://github.com/YeonwooSung/RETRO',
+  long_description=long_description,
+  long_description_content_type='text/markdown',
   keywords = [
     'artificial intelligence',
     'deep learning',
