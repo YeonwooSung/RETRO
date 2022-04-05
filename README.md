@@ -44,3 +44,8 @@ retrieved = torch.randint(0, 20000, (2, 32, 2, 128)) # retrieved tokens - (batch
 loss = retro(seq, retrieved, return_loss = True)
 loss.backward()
 ```
+
+## TODOs
+
+- Clean-up codes
+- Distribute pretrained-models
